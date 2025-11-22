@@ -1,0 +1,14 @@
+[package]
+name = "rust-wasm-tic-tac-toe"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2.100"
+
+[dependencies.web-sys]
+features = ["Document", "Element", "HtmlElement", "Node", "Window", "NodeList"]
+version = "0.3.82"
